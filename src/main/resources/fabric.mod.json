@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "examplemod",
+	"version": "${version}",
+	"name": "examplemod",
+	"description": "this is an example mod",
+	"authors": [
+		"Wala_kia"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/examplemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kia.examplemod.Examplemod"
+		],
+		"client": [
+			"net.kia.examplemod.Examplemodclient"
+		],
+		"fabric-datagen": [
+			"net.kia.examplemod.ExamplemodDataGenerator"
+		]
+	},
+	"mixins": [
+		"examplemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
